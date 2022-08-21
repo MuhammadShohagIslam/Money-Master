@@ -33,7 +33,7 @@
                         <label class="text-lg text-black">Income: </label>
                         <input
                             type="text"
-                            id=""
+                            id="incomeInput"
                             placeholder="$ Put Your Income Amount"
                             class="placeholder:text-black w-2/5 p-2 bg-[#DCDCDC] text-black"
                         />
@@ -48,7 +48,7 @@
                             <label class="text-lg text-black mr-5">Food:</label>
                             <input
                                 type="text"
-                                id=""
+                                id="foodInput"
                                 placeholder="$ Put Your Food Expense"
                                 class="placeholder:text-black w-2/5 p-2 bg-[#DCDCDC] text-black"
                             />
@@ -59,7 +59,7 @@
                             </label>
                             <input
                                 type="text"
-                                id=""
+                                id="rentInput"
                                 placeholder="$ Put Your Rent Expense"
                                 class="placeholder:text-black w-2/5 p-2 bg-[#DCDCDC] text-black"
                             />
@@ -68,7 +68,7 @@
                             <label class="text-lg text-black">Clothes: </label>
                             <input
                                 type="text"
-                                id=""
+                                id="clothesInput"
                                 placeholder="$ Put Your Clothes Expense"
                                 class="placeholder:text-black w-2/5 p-2 bg-[#DCDCDC] text-black"
                             />
@@ -84,10 +84,10 @@
                     </div>
                     <div class="text-center space-y-2 my-4">
                         <h2 class="text-[22px] font-medium text-black">
-                            Total Expenses: <span>2000</span>
+                            Total Expenses: <span id="total-expenses">2000</span>
                         </h2>
                         <h2 class="text-[22px] font-medium text-black">
-                            Balance: <span>4000</span>
+                            Balance: <span id="total-balance">4000</span>
                         </h2>
                     </div>
                     <div class="text-center space-x-1.5">
@@ -117,6 +117,7 @@
             </div>
         </section>
         <!-- JS -->
+        <script src="js/utilites.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
