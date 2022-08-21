@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- TailwindCss -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Money Master</title>
+    </head>
+    <body class="bg-black">
+        <header>
+            <h2 class="font-bold text-5xl text-white text-center my-10">
+                Money Monster 💰
+            </h2>
+        </header>
+        <section class="container m-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <img
+                        class="w-full h-full"
+                        src="img/money.jpg"
+                        alt="money master"
+                    />
+                </div>
+                <div class="bg-[#F8F8F8] pl-24 pt-14 pb-9">
+                    <h3
+                        class="font-medium text-[22px] text-black text-center mb-7"
+                    >
+                        Income
+                    </h3>
+                    <div class="text-center">
+                        <label class="text-lg text-black">Income: </label>
+                        <input
+                            type="text"
+                            id=""
+                            placeholder="$ Put Your Income Amount"
+                            class="placeholder:text-black w-2/5 p-2 bg-[#DCDCDC] text-black"
+                        />
+                    </div>
+                    <h3
+                        class="font-medium text-[22px] text-black text-center my-5"
+                    >
+                        Expenses
+                    </h3>
+                    <div class="space-y-5">
+                        <div class="text-center">
+                            <label class="text-lg text-black mr-5">Food:</label>
+                            <input
+                                type="text"
+                                id=""
+                                placeholder="$ Put Your Food Expense"
+                                class="placeholder:text-black w-2/5 p-2 bg-[#DCDCDC] text-black"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <label class="text-lg text-black mr-6"
+                                >Rent:
+                            </label>
+                            <input
+                                type="text"
+                                id=""
+                                placeholder="$ Put Your Rent Expense"
+                                class="placeholder:text-black w-2/5 p-2 bg-[#DCDCDC] text-black"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <label class="text-lg text-black">Clothes: </label>
+                            <input
+                                type="text"
+                                id=""
+                                placeholder="$ Put Your Clothes Expense"
+                                class="placeholder:text-black w-2/5 p-2 bg-[#DCDCDC] text-black"
+                            />
+                        </div>
+                        <div class="text-center">
+                            <button
+                                id="calculate-btn"
+                                class="py-3 font-bold text-xl text-white bg-cyan-400 px-14 rounded"
+                            >
+                                Calculate
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center space-y-2 my-4">
+                        <h2 class="text-[22px] font-medium text-black">
+                            Total Expenses: <span>2000</span>
+                        </h2>
+                        <h2 class="text-[22px] font-medium text-black">
+                            Balance: <span>4000</span>
+                        </h2>
+                    </div>
+                    <div class="text-center space-x-1.5">
+                        <label class="text-lg text-black">Save: </label>
+                        <input
+                            type="text"
+                            id=""
+                            placeholder="$ Put Save Percentage"
+                            class="placeholder:text-black py-1 px-2 bg-[#DCDCDC] text-black"
+                        />
+                        <span class="text-lg text-black font-medium">%</span>
+                        <button
+                            class="py-1 font-bold text-lg text-white bg-cyan-400 px-12 rounded mt-2"
+                        >
+                            Save
+                        </button>
+                    </div>
+                    <div class="text-center space-y-2 my-7">
+                        <h2 class="text-xl font-medium text-black">
+                            Saving Amount: <span>2000</span>
+                        </h2>
+                        <h2 class="text-xl font-medium text-black">
+                            Remaining Balance: <span>4000</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- JS -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
